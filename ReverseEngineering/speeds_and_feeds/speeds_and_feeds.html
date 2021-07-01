@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>
+    speeds and feeds 
+  </title>
+      <!---Stylesheet--->
+      <link rel="styleSheet" href="./style.css">
+  </head>
+ <body>
+   <div class="header">
+    <h1><strong>Challenge Name</strong>: Speeds and Feeds</h1>
+    <img src="../Reverse-engineering.png" alt="reverseEngineering" id="headerImg">
+    <br>
+    <h3><strong>Description</strong>: There is something on my shop network running at <em><strong>nc mercury.picoctf.net 16524</strong></em>, but I can't tell what it is. Can you?</h3>
+    <h3><em><strong>hint</strong>: What language does a CNC machine use?</em></h3>
+   </div>
+
+   <div class="solution">
+     <h3>Solution:</h3>
+    <h4>What happens when I run <em>"nc mercury.picoctf.net 16524"</em>?</h4> 
+   <p><strong>Output:</strong></p>
+      <br>
+      <img src="./nc_command.png" alt="Output">
+      <br>
+      <p>
+      It looks like some kind of instructions.
+      </p>
+    <h4>Lets look at our hint!</h4>
+    <p>It says something about CNC machine.So lets find out about CNC machine 
+      <br>
+      <strong>CNC machine:</strong>
+      <abbr title="Computer Numerical Control">CNC</abbr> is programming language that is used to program machines like <em>3D printers,Lathes,Drills</em>
+      <a href="https://www.tomasw.com/gcodesim/"><u>Online <abbr title="Computer Numerical Control">CNC</abbr> simulator</u></a> can be used for execution of this instructions.
+      <br>
+      <br>
+      <strong>Output:</strong></p>
+      <img src="./simulator_output.png" alt="Output from the CNC Simulator" id="simulator">
+    </div>
+    <p id="flag">Flag:<strong>picoCTF{num3r1cal_c0ntr0l_1395ffad}</strong></p>
+   
+			
+ </body>
+</html>
+ 
