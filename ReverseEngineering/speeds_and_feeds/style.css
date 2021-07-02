@@ -1,5 +1,8 @@
 body{
     background-color:whitesmoke;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .solution img{
@@ -7,27 +10,30 @@ body{
     margin-right: auto;
     display: block;
     border: solid;
-    
+    max-width: 60%;
 }
 
 .header h1{
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
+    font-size: 2vw;
 }
 
 .header ul{
     padding-left: 10%;
     opacity: 0.7;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: x-large;
+    font-size: 1.3vw;
+    text-align: justify;
 }
 
 .solution h4{
     padding-left: 15%;
-    font-size: x-large;
+    font-size: 1.2vw;
     opacity: 0.6;
     line-height: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .solution h3{
@@ -35,13 +41,14 @@ body{
     opacity: 0.9;
     text-shadow: 10%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: x-large;   
+    font-size: 1.3vw;
+    text-align: justify;   
 }
 
 .solution p{
     padding-left: 20%;
     padding-right: 20%;
-    font-size: 18pt;
+    font-size: 1.3vw;
     text-align: justify;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -54,22 +61,22 @@ body{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 30%;
-    height: 30%;
+    max-width: 30%;
+    max-height: 30%;
 }
 
 #simulator{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 60%;
-    height: 60%;
+    max-width: 60%;
+    max-height: 60%;
     
 }
 
 #flag{
     text-align: center;
-    font-size: x-large;
+    font-size: 1.5vw;
     background-color: coral;
     margin-left: 20%;
     margin-right: 20%;    
@@ -80,4 +87,5 @@ footer{
     text-align: center;
     opacity: 0.7;
     color: black;
+    font-size: 1.2vw;
 }

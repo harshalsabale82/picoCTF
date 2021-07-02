@@ -3,38 +3,42 @@ h1{
     text-align: center;
     color: rgb(10, 90, 10);
     text-shadow: 1px 1px black;
-    font-size: 26pt;
+    font-size: 2.8vw;
+    line-height: 10%;
 }
 
 h2{
     text-align: center;
-    font-size: 22pt;
+    font-size: 2.2vw;
+    padding-top: 1.5%;
 
 }
 
 p{
     text-align: center;
-    font-size: 16pt ;
-    line-height: 30%;
+    font-size: 1.4vw ;
+    line-height: 60%;
 }
 
 a{
     color: rgb(63, 61, 61);
-    font-size: 16pt;
+    font-size: 1.4vw;
 }
 
 a:hover{
-    color:black;
-    font-size: 18pt;
+    color:black;border: 1px solid black;
+    font-size: 1.5vw;
 }
 
 img{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    height: 10%;
-    width: 10%;
+    height: 15%;
+    width: 15%;
+    padding-top: 1%;
 }   
 body{
     background-color: whitesmoke;
+    text-align: justify;
 }
