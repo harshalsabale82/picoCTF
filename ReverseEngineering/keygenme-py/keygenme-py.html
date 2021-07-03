@@ -31,24 +31,29 @@
       After execution of the program ,we see a menu with four options.<strong>On choosing option (a)</strong> program asks us to enter the star name.
       <strong>On choosing option(b)</strong> program asks us to buy full version.<strong>On choosing option(c)</strong> program asks us to enter <strong>license key</strong>
       </p>
+      <br>
     <h4>Lets look at the code!</h4>
     <img src="./patialFlag.png" alt="partial flag" id="simulator">
+    <br>
     <p>As you can see there are two variables "key_part_static1_trial" and "key_part_dynamic1_trial". Our flag has been divided and stored seperately into these two variables.
       <br>
       <br>
       We already have former part of the flag i.e <strong>"picoCTF{1n_7h3_|<3y_of_"</strong>
       <br>
-      <br>
       All we need to do is find the latter part.
+      <br>
+      <br>
       <h4>Let's look at "enter_license" and "check_ key" functions</h4>
       <img src="./enterLicense.png" alt="enter_license function">
       <br>
       <img src="./userNameTrail.png" alt="username">
+      <br>
       <p>So here we can see that there's "user_key" variable where user input will be stored and "bUsername_trail" variable which stores <strong>b"FREEMAN"</strong> 
         string.Then this two values are passed to "check_key" function.
       </p>
       <br>
       <img src="./check_key1.png" alt="check key 1">
+      <br>
       <p>This function requires two values, first "key" variable that holds <strong>user entered license key</strong>
         and "user_name" variable that holds <strong>"FREEMAN"</strong>.Along with this two variables there's third one "key_full_template_trial" which
         holds <strong>"picoCTF{1n_7h3_|<3y_of_xxxxxxxx}"</strong>
@@ -61,6 +66,7 @@
         <br>
         <strong>Let's make changes to this block of code</strong>, instead of returning "false" lets print <strong>"hashlib.sha256(username_trial).hexdigest()[i]"</strong> and then increment the "i" value.
       </p>
+      <br>
         <h4>Code after Changes</h4>
         <img src="./check_trail2.png" alt="check key">
         <br>
@@ -70,12 +76,8 @@
         <h4>Output</h4>
         <img src="./solution.png" alt="solution">
         <p>Voilà!!! remaing part of the flags gets displayed</p>
-
-      <br>
-      <br>
     </div>
     <p id="flag">Flag:<strong>picoCTF{1n_7h3_|<3y_of_0d208392}</strong></p>
-   
 		<footer>
       <p>Author: Harshal Sabale</p>
     </footer>
